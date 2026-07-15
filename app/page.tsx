@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Section from "@/components/Section";
 
 export default function Home() {
   return (
@@ -8,42 +9,29 @@ export default function Home() {
 
       <Hero />
 
-      <section
-        id="about"
-        className="min-h-screen px-6 py-24"
-      >
+      <Section id="about">
         <h2 className="text-3xl font-bold">
           About
         </h2>
-      </section>
+      </Section>
 
-      <section
-        id="projects"
-        className="min-h-screen px-6 py-24"
-      >
+      <Section id="projects">
         <h2 className="text-3xl font-bold">
           Projects
         </h2>
-      </section>
+      </Section>
 
-      <section
-        id="experience"
-        className="min-h-screen px-6 py-24"
-      >
-        <h2 className="text-3xl font-bold"
-        >
+      <Section id="experience">
+        <h2 className="text-3xl font-bold">
           Experience
         </h2>
-      </section>
+      </Section>
 
-      <section
-        id="contact"
-        className="min-h-screen px-6 py-24"
-      >
+      <Section id="contact">
         <h2 className="text-3xl font-bold">
           Contact
         </h2>
-      </section>
+      </Section>
     </main>
   );
 }
