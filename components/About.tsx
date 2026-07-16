@@ -17,7 +17,7 @@ export default function About() {
             software development.
           </p>
 
-          <p className="mt-4 text-lg leading-relaxed">
+          <p className="mt-6 text-lg leading-relaxed">
             I enjoy working across the entire stack —
             from designing electronics and firmware,
             to developing applications and infrastructure

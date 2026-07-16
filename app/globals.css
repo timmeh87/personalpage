@@ -1,12 +1,17 @@
 @import "tailwindcss";
 
+:root {
+  --background: #d9fbff;
+  --foreground: #171717;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  background: var(--background);
+  color: var(--foreground);
 }
 
 @theme inline {
@@ -23,7 +28,16 @@ html {
   }
 }
 
-body {
-  background: white;
-  color: #111;
+@layer components {
+  .heading-xl {
+    @apply text-6xl font-bold tracking-tight;
+  }
+
+  .heading-lg {
+    @apply text-4xl font-bold tracking-tight;
+  }
+
+  .heading-md {
+    @apply text-2xl font-semibold;
+  }
 }

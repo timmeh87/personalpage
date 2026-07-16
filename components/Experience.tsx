@@ -3,44 +3,52 @@ import Section from "./Section";
 const jobs = [
   {
     company: "Trackgen Solutions",
-    period: "2021 - Present",
+    title: "Senior Software Engineer",
+    period: "2021 - 2026",
     description:
       "Development of ISR360 multi-target tracking systems using lidar, C++, and computer vision technologies.",
+      
+    anchor: "trackgen",
   },
   {
     company: "Dexlabs",
-    period: "2011 - Present",
+    title: "Hardware / Systems Engineer",
+    period: "2011 - 2026",
     description:
       "Embedded systems development, PCB design, hardware prototyping, and human interface devices.",
+    anchor: "dexlabs",
   },
 ];
 
 export default function Experience() {
   return (
     <Section id="experience">
+      <div className="max-w-3xl">
       <h2 className="text-3xl font-bold mb-8">
         Experience
       </h2>
 
       <div className="space-y-8">
         {jobs.map((job) => (
-          <div
-            key={job.company}
-            className="border-l-2 pl-6"
-          >
-            <h3 className="text-xl font-semibold">
-              {job.company}
-            </h3>
+          <div className="rounded-xl border p-6" key={job.company}>
+            <div className="flex justify-between items-start">
+              <div>
+                <h3 className="text-3xl">{job.company}</h3>
+                <p className="text-xl">{job.title}</p>
+              </div>
 
-            <p className="text-sm text-gray-500">
-              {job.period}
-            </p>
+              <span>{job.period}</span>
+            </div>
 
-            <p className="mt-3">
+            <p className="mt-4">
               {job.description}
             </p>
+            <a className="mt-6 inline-block">
+              View full responsibilities →
+            </a>
           </div>
         ))}
+      </div>
       </div>
     </Section>
   );

@@ -1,9 +1,9 @@
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b bg-white/80 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <a
-          href="/"
+          href="/profile"
           className="font-semibold"
         >
           Tim Bernasch

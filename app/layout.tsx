@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Tim Bernasch | Computer Engineer",
   description:
-    "Portfolio of Tim Bernasch — embedded systems, software development, PCB design, and engineering projects.",
+    "Embedded systems, software development, PCB design, and engineering projects.",
 };
 
 export default function RootLayout({

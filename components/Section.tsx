@@ -14,7 +14,7 @@ export default function Section({
       id={id}
       className={`py-24 ${className}`}
     >
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
         {children}
       </div>
     </section>
