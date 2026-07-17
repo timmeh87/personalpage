@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Container from "./Container";
+import Section from "./Section";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center pt-20">
-      <Container>
+    <Section className="min-h-screen flex items-center pt-20">
         <div className="grid items-center gap-12 md:grid-cols-2">
 
           <div>
@@ -54,7 +53,6 @@ export default function Hero() {
           </div>
 
         </div>
-      </Container>
-    </section>
+    </Section>
   );
 }

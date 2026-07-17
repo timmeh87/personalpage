@@ -1,21 +1,20 @@
 import Section from "./Section";
-
 const jobs = [
   {
     company: "Trackgen Solutions",
     title: "Senior Software Engineer",
-    period: "2021 - 2026",
+    period: "2010 - 2026",
     description:
-      "Development of ISR360 multi-target tracking systems using lidar, C++, and computer vision technologies.",
+      "Development of ISR360, a large cross-platform wxWidgets application for developing and evaluating tracking algorithms for industrial and defence applications.",
       
     anchor: "trackgen",
   },
   {
     company: "Dexlabs",
     title: "Hardware / Systems Engineer",
-    period: "2011 - 2026",
+    period: "2016 - 2026",
     description:
-      "Embedded systems development, PCB design, hardware prototyping, and human interface devices.",
+      "PCB design, Embedded systems development, hardware prototyping, human interface devices",
     anchor: "dexlabs",
   },
 ];
@@ -43,8 +42,8 @@ export default function Experience() {
             <p className="mt-4">
               {job.description}
             </p>
-            <a className="mt-6 inline-block">
-              View full responsibilities →
+            <a className="mt-6 inline-block" href={"/profile/resume.html#" + job.anchor}>
+              <u>View full responsibilities on resume →</u>
             </a>
           </div>
         ))}

@@ -2,37 +2,38 @@ import Section from "./Section";
 
 const skillGroups = [
   {
+    title: "Software Development",
+    skills: [
+      "C / C++",
+      "GCC / MSVC Toolchains",
+      "JavaScript / TypeScript",
+      "Python",
+      "React / Next.js",
+      "vcpkg",
+      "CMake",
+      "Git",
+      "REST APIs",
+      "Windows / Linux",
+      "Visual Studio / VSCode",
+      "Keil"
+    ],
+  },
+  {
     title: "Embedded Systems",
     skills: [
-      "ARM Cortex-M",
       "STM32 Microcontrollers",
+      "PIC Microcontrollers",
       "Embedded C/C++",
+      "ARM Cortex-M",
       "Bare-Metal Programming",
-      "RTOS",
       "STM32CubeIDE",
-      "HAL / CMSIS",
       "USB HID",
-      "BLE",
+      "Bluetooh / BLE",
       "UART / SPI / I2C / CAN",
       "PWM / DMA",
       "Hardware Bring-Up",
       "Firmware Debugging",
-    ],
-  },
-  {
-    title: "Software Development",
-    skills: [
-      "C++",
-      "Python",
-      "JavaScript / TypeScript",
-      "React / Next.js",
-      "OpenCV",
-      "CMake",
-      "vcpkg",
-      "GCC / MSVC Toolchains",
-      "GDB Debugging",
-      "Git",
-      "REST APIs",
+      "PCB design"
     ],
   },
   {
@@ -40,14 +41,15 @@ const skillGroups = [
     skills: [
       "PCB Design & Layout",
       "KiCad",
-      "Schematic Design",
+      "Schematic design / capture",
       "DFM / DFA",
+      "Soldering & PCB Rework",
       "Hardware Validation",
       "Oscilloscopes",
       "Logic Analyzers",
-      "Soldering & PCB Rework",
       "Power Supply Design",
-      "ESD Handling",
+      "BOM optimization",
+      "PCB Fabrication"
     ],
   },
   {
@@ -77,7 +79,9 @@ export default function Skills() {
           <h3 className="mb-2 font-semibold">{group.title}</h3>
           <div className="flex flex-wrap gap-2">
             {group.skills.map(skill => (
-              <div key={skill}   className="rounded-lg border border-white/40 bg-gradient-to-b from-white/60 to-black/5 px-4 py-1.5 w-fit shadow-sm">
+              <div key={skill}  
+                 className="rounded-lg border border-white/20 bg-white/10 backdrop-blur-sm px-4 py-1.5 w-fit shadow-sm"
+               >
                 {skill}
               </div>
             ))}
