@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b bg-white/80 backdrop-blur dark:bg-zinc-900/80">
+    <nav className="sticky top-0 left-0 right-0 z-50 border-b bg-white/80 backdrop-blur dark:bg-zinc-900/80">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <a
           href="/profile"
@@ -9,7 +9,7 @@ export default function Navbar() {
           Tim Bernasch
         </a>
 
-        <div className="flex gap-6 text-sm">
+        <div className="px-6 py-2 flex flex-wrap gap-x-6 gap-y-3 text-sm">
           <a href="#about" className="text-zinc-700 hover:underline dark:text-zinc-300">
             About
           </a>
@@ -22,7 +22,7 @@ export default function Navbar() {
             Projects
           </a>
 
-          <a href="#contact" className="text-zinc-700 hover:underline dark:text-zinc-300">
+          <a href="#contact" className="hidden text-zinc-700 hover:underline dark:text-zinc-300">
             Contact
           </a>
 

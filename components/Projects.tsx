@@ -4,12 +4,20 @@ const projects = [
   {
     title: "ISR360 Multi-Target Tracking System",
     description:
-      "Real-time tracking software for maritime surveillance applications. Developed software components for lidar-based tracking, visualization, and sensor processing.",
+      "At Trackgen, we developed a real-time sensor fusion and target tracking software for industrial and defense applications. I ported the entire application to Linux, developed software components in C++ and JavaScript, and created a build automation system from scratch. I also created a cloud-hosted version of ISR360, by containerizing the application and developing a web-based interface in React, deployed on AWS infrastructure for remote access and scalability.",
     tags: [
       "C++",
-      "Computer Vision",
-      "Lidar",
+      "JavaScript",
       "Linux",
+      "CMake",
+      "vcpkg",
+      "Build automation",
+      "Debugging",
+      "Optimization",
+      "React",
+      "AWS",
+      "SQL",
+      "Docker"
     ],
     link: "#",
   },
@@ -18,22 +26,30 @@ const projects = [
     description:
       "Custom embedded hardware and firmware platforms including USB HID devices, wireless communication systems, and custom PCB designs.",
     tags: [
+      "Schematic capture",
+      "PCB Design",
+      "PCB Manufacturing / assembly",
       "STM32",
       "Embedded C",
       "USB",
       "BLE",
-      "PCB Design",
+      "3D Printing"
     ],
     link: "#",
   },
   {
     title: "Force Feedback Steering Wheel",
     description:
-      "Custom force feedback controller combining electronics design, embedded firmware, and mechanical integration.",
+      "While working at Dexlabs we built a custom force feedback videogame controller combining electronics design, embedded firmware, and mechanical integration.",
     tags: [
+      "Schematic capture",
       "PCB Design",
-      "Motor Control",
-      "Embedded Systems",
+      "PCB Manufacturing / assembly",
+      "STM32",
+      "Embedded C",
+      "USB",
+      "CAN bus",
+      "Motor Control"
     ],
     link: "#",
   },
@@ -42,10 +58,14 @@ const projects = [
     description:
       "Self-hosted infrastructure for storage, networking, development, and experimentation using enterprise server hardware.",
     tags: [
+      "Linux",
+      "Windows",
       "TrueNAS",
       "ZFS",
       "Docker",
+      "Hyper-V",
       "Networking",
+      "Cloudflare"
     ],
     link: "#",
   },
@@ -68,7 +88,7 @@ export default function Projects() {
               {project.title}
             </h3>
 
-            <p className="mt-4 leading-relaxed text-gray-600">
+            <p className="mt-4 leading-relaxed">
               {project.description}
             </p>
 
@@ -76,7 +96,8 @@ export default function Projects() {
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-full border px-3 py-1 text-sm"
+                  className="rounded-lg border border-white/20 bg-white/10 backdrop-blur-sm px-4 py-1.5 w-fit shadow-sm"
+
                 >
                   {tag}
                 </span>

@@ -1,30 +1,89 @@
 import Section from "./Section";
-import Container from "./Container";
+
+const services = [
+  {
+    title: "Storage & Virtualization",
+    description:
+      "Self-hosted storage platform built around TrueNAS SCALE, ZFS pools, and enterprise server hardware.",
+    tags: [
+      "TrueNAS",
+      "ZFS",
+      "RAIDZ2",
+      "Linux",
+    ],
+  },
+  {
+    title: "Networking Infrastructure",
+    description:
+      "Managed home network with VLANs, routing, firewall rules, and secure remote access.",
+    tags: [
+      "Networking",
+      "WireGuard",
+      "VLANs",
+      "Switching",
+    ],
+  },
+  {
+    title: "Self-Hosted Services",
+    description:
+      "Running personal services and development infrastructure using containers and Linux.",
+    tags: [
+      "Docker",
+      "Nginx",
+      "Cloudflare",
+      "Web Hosting",
+    ],
+  },
+];
 
 export default function Homelab() {
   return (
     <Section id="homelab">
-      <h2 className="text-3xl font-bold mb-8">
+      <h2 className="mb-8 text-3xl font-bold">
         Homelab
       </h2>
 
-      <p className="text-lg">
-        A self-hosted environment for storage,
-        virtualization, networking, and experimentation.
-      </p>
+      <div className="max-w-3xl">
+        <p className="text-lg leading-relaxed">
+          A personal infrastructure lab used for experimenting
+          with storage, networking, virtualization, and
+          self-hosted applications.
+        </p>
 
-      <div className="mt-6 grid gap-4 md:grid-cols-3">
-        <div className="border rounded-lg p-4">
-          TrueNAS Storage
-        </div>
+        <p className="mt-4 text-lg leading-relaxed">
+          The environment provides a platform for testing
+          technologies that overlap with my professional work:
+          Linux systems, networking, automation, and software
+          deployment.
+        </p>
+      </div>
 
-        <div className="border rounded-lg p-4">
-          Linux Services
-        </div>
+      <div className="mt-10 grid gap-6 md:grid-cols-3">
+        {services.map((service) => (
+          <div
+            key={service.title}
+            className="rounded-2xl border p-6 shadow-sm"
+          >
+            <h3 className="text-xl font-bold">
+              {service.title}
+            </h3>
 
-        <div className="border rounded-lg p-4">
-          Networking Infrastructure
-        </div>
+            <p className="mt-3">
+              {service.description}
+            </p>
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              {service.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border px-3 py-1 text-sm"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </Section>
   );

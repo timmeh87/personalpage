@@ -33,12 +33,6 @@ export default function About() {
             that bring those systems to life.
           </p>
 
-          
-          <p className="mt-6 text-md leading-relaxed">       
-              <span style={{"display":"inline-block"}}><img src="/profile/images/yt.ico" style={{"height":"1em", "paddingTop":"4px"}}></img></span>
-              <a href="https://www.youtube.com/watch?v=8fcSviC7cRM">  <u>"The key to success is developers"</u></a>
-              &nbsp;- <i>Steve Ballmer, Former Microsoft CEO</i>
-          </p>
         </div>
 
         <div>
