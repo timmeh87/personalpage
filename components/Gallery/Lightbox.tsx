@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { GalleryImage } from "./GalleryImages";
+import { GalleryCollection } from "./GalleryImages";
+import { getImagePath } from "./GalleryPaths";
 
 interface LightboxProps {
-    images: GalleryImage[];
+    collection: GalleryCollection;
     selectedIndex: number;
     onClose: () => void;
     onPrevious: () => void;
@@ -12,14 +13,14 @@ interface LightboxProps {
 }
 
 export default function Lightbox({
-    images,
+    collection,
     selectedIndex,
     onClose,
     onPrevious,
     onNext,
 }: LightboxProps) {
 
-    const image = images[selectedIndex];
+    const image = collection.images[selectedIndex];
 
     return (
         <div
@@ -49,7 +50,7 @@ export default function Lightbox({
             >
 
                 <Image
-                    src={image.image}
+                    src={getImagePath(collection,image)}
                     alt={image.title}
                     width={1600}
                     height={1200}
@@ -127,7 +128,7 @@ export default function Lightbox({
                 >
                     {image.title}
                     <br />
-                    {selectedIndex + 1} / {images.length}
+                    {selectedIndex + 1} / {collection.images.length}
                 </div>
 
             </div>

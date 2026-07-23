@@ -2,14 +2,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { GalleryImage } from "./GalleryImages";
+import { GalleryImage, GalleryCollection } from "./GalleryImages";
 
 interface FeaturedImageProps {
+    collection: GalleryCollection;
     image: GalleryImage;
     href: string;
 }
 
 export default function FeaturedImage({
+    collection,
     image,
     href,
 }: FeaturedImageProps) {
@@ -19,7 +21,7 @@ export default function FeaturedImage({
             className="group relative block overflow-hidden rounded-xl"
         >
             <Image
-                src={image.image}
+                src={`/profile/images/${collection.path}/${image.image}`}
                 alt={image.title}
                 width={1200}
                 height={800}

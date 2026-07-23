@@ -32,12 +32,14 @@ export default function GalleryCard({
             "
         >
             <FeaturedImage
+                collection={collection}
                 image={featuredImage}
                 href={`/gallery/${collection.slug}`}
             />
 
             <div className="mt-4">
                 <ThumbnailStrip
+                collection={collection}
                 images={previewImages}
                 selectedIndex={selectedIndex}
                 onSelect={setSelectedIndex}

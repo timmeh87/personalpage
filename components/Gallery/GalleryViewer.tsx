@@ -4,14 +4,14 @@ import { useState } from "react";
 
 import ImageGrid from "./ImageGrid";
 import Lightbox from "./Lightbox";
-import { GalleryImage } from "./GalleryImages";
+import { GalleryCollection } from "./GalleryImages";
 
 interface GalleryViewerProps {
-    images: GalleryImage[];
+    collection: GalleryCollection;
 }
 
 export default function GalleryViewer({
-    images,
+    collection,
 }: GalleryViewerProps) {
 
     const [selectedIndex, setSelectedIndex] =
@@ -21,7 +21,7 @@ export default function GalleryViewer({
     return (
         <>
             <ImageGrid
-                images={images}
+                collection={collection}
                 onSelect={(index) => setSelectedIndex(index)}
             />
 
@@ -29,7 +29,7 @@ export default function GalleryViewer({
             {selectedIndex !== null && (
 
                 <Lightbox
-                    images={images}
+                    collection={collection}
                     selectedIndex={selectedIndex}
 
                     onClose={() =>
@@ -39,14 +39,14 @@ export default function GalleryViewer({
                     onPrevious={() =>
                         setSelectedIndex(
                             selectedIndex === 0
-                                ? images.length - 1
+                                ? collection.images.length - 1
                                 : selectedIndex - 1
                         )
                     }
 
                     onNext={() =>
                         setSelectedIndex(
-                            selectedIndex === images.length - 1
+                            selectedIndex === collection.images.length - 1
                                 ? 0
                                 : selectedIndex + 1
                         )

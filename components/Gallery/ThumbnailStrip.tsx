@@ -1,15 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import { GalleryImage } from "./GalleryImages";
+import { GalleryImage, GalleryCollection } from "./GalleryImages";
 
 interface ThumbnailStripProps {
+    collection: GalleryCollection;
     images: GalleryImage[];
     selectedIndex: number;
-    onSelect: (index: number) => void;
+    onSelect: (index:number)=>void;
 }
 
 export default function ThumbnailStrip({
+    collection,
     images,
     selectedIndex,
     onSelect,
@@ -33,7 +35,7 @@ export default function ThumbnailStrip({
                     `}
                 >
                     <Image
-                        src={image.image}
+                        src={`/profile/thumbs/${collection.path}/${image.image}`}
                         alt={image.title}
                         width={300}
                         height={200}

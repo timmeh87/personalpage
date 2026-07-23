@@ -1,17 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import { GalleryImage } from "./GalleryImages";
+import { GalleryCollection } from "./GalleryImages";
+import { getThumbnailPath } from "./GalleryPaths";
 
 interface ImageGridProps {
-    images: GalleryImage[];
+    collection: GalleryCollection;
     onSelect: (index: number) => void;
 }
 
 export default function ImageGrid({
-    images,
+    collection,
     onSelect,
 }: ImageGridProps) {
+    const images = collection.images;
     return (
         <div
             className="
@@ -33,7 +35,7 @@ export default function ImageGrid({
                     "
                 >
                     <Image
-                        src={image.image}
+                        src={`/profile/thumbs/${collection.path}/${image.image}`}
                         alt={image.title}
                         width={800}
                         height={600}

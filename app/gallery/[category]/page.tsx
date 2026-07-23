@@ -53,7 +53,7 @@ export default async function GalleryPage({
             <div className="mt-10">
 
                 <GalleryViewer
-                    images={collection.images}
+                    collection={collection}
                 />
 
             </div>
