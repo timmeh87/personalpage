@@ -16,11 +16,12 @@ export default function GalleryCard({
 }: GalleryCardProps) {
     const [selectedIndex, setSelectedIndex] = useState(0);
 
-    const previewImages =
-        collection.images.slice(0, 3);
+    const previewImages = collection.images
+        .filter((image) => image.featured)
+        .slice(0, 3);
 
     const featuredImage =
-        previewImages[selectedIndex];
+        previewImages[selectedIndex] ?? collection.images[0];
 
     return (
         <div

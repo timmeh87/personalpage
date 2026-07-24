@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ROOT="./output/images"
-OUT="gallery.json"
+OUT="gallery.ts"
 
 echo "[" > "$OUT"
 
@@ -22,7 +22,7 @@ do
     slug: "$CATEGORY",
     title: "$TITLE",
     description: "",
-    path: "/profile/images/$CATEGORY",
+    path: "$CATEGORY",
     images: [
 EOF
 
@@ -44,7 +44,9 @@ EOF
       {
         image: "$NAME",
         title: "$TITLE",
-        description: ""
+        description: "",
+		sortOrder: -1,
+		featured: false
       }
 EOF
 

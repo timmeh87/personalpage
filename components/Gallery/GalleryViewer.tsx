@@ -17,19 +17,30 @@ export default function GalleryViewer({
     const [selectedIndex, setSelectedIndex] =
         useState<number | null>(null);
 
+    const sortedImages =
+        [...collection.images].sort(
+            (a, b) =>
+                a.sortOrder - b.sortOrder
+        );
 
     return (
         <>
             <ImageGrid
-                collection={collection}
-                onSelect={(index) => setSelectedIndex(index)}
+                collection={{
+                    ...collection,
+                    images: sortedImages,
+                }}
+                onSelect={setSelectedIndex}
             />
 
 
             {selectedIndex !== null && (
 
                 <Lightbox
-                    collection={collection}
+                    collection={{
+                        ...collection,
+                        images: sortedImages,
+                    }}
                     selectedIndex={selectedIndex}
 
                     onClose={() =>
