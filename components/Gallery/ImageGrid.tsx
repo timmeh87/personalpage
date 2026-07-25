@@ -35,7 +35,7 @@ export default function ImageGrid({
                     "
                 >
                     <Image
-                        src={`/profile/thumbs/${collection.path}/${image.image}`}
+                        src={getThumbnailPath(collection,image)}
                         alt={image.title}
                         width={800}
                         height={600}

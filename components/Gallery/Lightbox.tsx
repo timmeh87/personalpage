@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Image from "next/image";
 import { GalleryCollection } from "./GalleryImages";
 import { getImagePath } from "./GalleryPaths";
@@ -21,6 +22,50 @@ export default function Lightbox({
 }: LightboxProps) {
 
     const image = collection.images[selectedIndex];
+
+    useEffect(() => {
+
+        // Prevent the page from scrolling while the lightbox is open.
+        const previousOverflow = document.body.style.overflow;
+        document.body.style.overflow = "hidden";
+
+        function handleKeyDown(event: KeyboardEvent) {
+
+            switch (event.key) {
+
+                case "Escape":
+                    onClose();
+                    break;
+
+                case "ArrowLeft":
+                    event.preventDefault();
+                    onPrevious();
+                    break;
+
+                case "ArrowRight":
+                    event.preventDefault();
+                    onNext();
+                    break;
+            }
+        }
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+
+            window.removeEventListener(
+                "keydown",
+                handleKeyDown
+            );
+
+            document.body.style.overflow = previousOverflow;
+        };
+
+    }, [
+        onClose,
+        onPrevious,
+        onNext,
+    ]);
 
     return (
         <div

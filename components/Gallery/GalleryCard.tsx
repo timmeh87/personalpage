@@ -39,7 +39,7 @@ export default function GalleryCard({
             />
 
             <div className="mt-4">
-                <ThumbnailStrip
+            <ThumbnailStrip
                 collection={collection}
                 images={previewImages}
                 selectedIndex={selectedIndex}
@@ -47,7 +47,7 @@ export default function GalleryCard({
             />
             </div>
 
-            <div className="mt-6">
+            <div className="mt-6 hidden">
 
                 <h3 className="text-2xl font-bold">
                     {collection.title}
@@ -65,6 +65,7 @@ export default function GalleryCard({
                         font-medium
                         text-blue-600
                         hover:underline
+                        hidden
                     "
                 >
                     View full gallery →

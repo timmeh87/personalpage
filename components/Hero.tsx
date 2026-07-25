@@ -3,7 +3,7 @@ import Section from "./Section";
 
 export default function Hero() {
   return (
-    <Section className="min-h-screen flex items-center pt-3">
+    <Section id="top" className="min-h-screen flex items-center pt-3">
         <div className="grid items-center gap-12 md:grid-cols-2">
 
           <div>

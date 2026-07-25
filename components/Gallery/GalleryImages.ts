@@ -48,14 +48,6 @@ export const galleryCollections: GalleryCollection[] = [
       }
 ,
       {
-        image: "20221111_121337.webp",
-        title: "20221111_121337",
-        description: "",
-		sortOrder: -1,
-		featured: false
-      }
-,
-      {
         image: "20250718_002926.webp",
         title: "20250718_002926",
         description: "",
@@ -76,7 +68,7 @@ export const galleryCollections: GalleryCollection[] = [
         title: "20250929_210644",
         description: "",
 		sortOrder: -1,
-		featured: true
+		featured: false
       }
 ,
       {
@@ -85,6 +77,14 @@ export const galleryCollections: GalleryCollection[] = [
         description: "",
 		sortOrder: -1,
 		featured: false
+      }
+,
+      {
+        image: "Photo0377.webp",
+        title: "Photo0377",
+        description: "",
+		sortOrder: -1,
+		featured: true
       }
     ]
   }
@@ -96,768 +96,768 @@ export const galleryCollections: GalleryCollection[] = [
     path: "photos",
     images: [
       {
-        image: "0h.webp",
-        title: "0h",
+        image: "001_bridge_night.webp",
+        title: "001_bridge_night",
         description: "",
 		sortOrder: -1,
 		featured: true
       }
 ,
       {
-        image: "2014-06-29_20-45-08_444.webp",
-        title: "2014-06-29_20-45-08_444",
+        image: "002_bruce_2.webp",
+        title: "002_bruce_2",
         description: "",
 		sortOrder: -1,
 		featured: true
       }
 ,
       {
-        image: "20200218_202147.webp",
-        title: "20200218_202147",
+        image: "003_copper_mine_1.webp",
+        title: "003_copper_mine_1",
+        description: "",
+		sortOrder: -1,
+		featured: false
+      }
+,
+      {
+        image: "004_bluebird.webp",
+        title: "004_bluebird",
         description: "",
 		sortOrder: -1,
 		featured: true
       }
 ,
       {
-        image: "20200513_205320.webp",
-        title: "20200513_205320",
+        image: "005_squamish.webp",
+        title: "005_squamish",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20200805_152145.webp",
-        title: "20200805_152145",
+        image: "005b_lizard.webp",
+        title: "005b_lizard",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20200805_152310.webp",
-        title: "20200805_152310",
+        image: "006_rainbow.webp",
+        title: "006_rainbow",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20200805_152829.webp",
-        title: "20200805_152829",
+        image: "007_salt.webp",
+        title: "007_salt",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20200805_153929.webp",
-        title: "20200805_153929",
+        image: "008_bruce_1.webp",
+        title: "008_bruce_1",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20200805_154515.webp",
-        title: "20200805_154515",
+        image: "009_mushroom_red1.webp",
+        title: "009_mushroom_red1",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20200805_163428.webp",
-        title: "20200805_163428",
+        image: "010_bc_trail_1.webp",
+        title: "010_bc_trail_1",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220319_131946.webp",
-        title: "20220319_131946",
+        image: "011_darlington_doll.webp",
+        title: "011_darlington_doll",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220605_155902.webp",
-        title: "20220605_155902",
+        image: "012_fire_colors.webp",
+        title: "012_fire_colors",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220605_162849.webp",
-        title: "20220605_162849",
+        image: "013_sap_sun.webp",
+        title: "013_sap_sun",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220605_185311.webp",
-        title: "20220605_185311",
+        image: "014_turks_caicos.webp",
+        title: "014_turks_caicos",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220606_180849.webp",
-        title: "20220606_180849",
+        image: "015_ducks.webp",
+        title: "015_ducks",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220705_180220.webp",
-        title: "20220705_180220",
+        image: "016_light_grid.webp",
+        title: "016_light_grid",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220707_160602.webp",
-        title: "20220707_160602",
+        image: "017_bromeliad.webp",
+        title: "017_bromeliad",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220708_171831.webp",
-        title: "20220708_171831",
+        image: "018_horses.webp",
+        title: "018_horses",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220708_172420.webp",
-        title: "20220708_172420",
+        image: "019_butterfly.webp",
+        title: "019_butterfly",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220709_114052.webp",
-        title: "20220709_114052",
+        image: "020_tree.webp",
+        title: "020_tree",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220711_151136.webp",
-        title: "20220711_151136",
+        image: "021_boat.webp",
+        title: "021_boat",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220711_151256.webp",
-        title: "20220711_151256",
+        image: "021_flowers.webp",
+        title: "021_flowers",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220716_131158.webp",
-        title: "20220716_131158",
+        image: "022_boat.webp",
+        title: "022_boat",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220717_112858.webp",
-        title: "20220717_112858",
+        image: "023_canoe.webp",
+        title: "023_canoe",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220717_152634.webp",
-        title: "20220717_152634",
+        image: "024_canoe.webp",
+        title: "024_canoe",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220727_121607.webp",
-        title: "20220727_121607",
+        image: "025_canoe.webp",
+        title: "025_canoe",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220727_145535.webp",
-        title: "20220727_145535",
+        image: "026_canoe.webp",
+        title: "026_canoe",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220801_174229.webp",
-        title: "20220801_174229",
+        image: "027_loons.webp",
+        title: "027_loons",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20220905_163756.webp",
-        title: "20220905_163756",
+        image: "028_slime.webp",
+        title: "028_slime",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20221001_154937.webp",
-        title: "20221001_154937",
+        image: "028b_urchin.webp",
+        title: "028b_urchin",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20221104_144345.webp",
-        title: "20221104_144345",
+        image: "029_aurora.webp",
+        title: "029_aurora",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20230221_122712.webp",
-        title: "20230221_122712",
+        image: "030_aurora.webp",
+        title: "030_aurora",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20230531_172946.webp",
-        title: "20230531_172946",
+        image: "031_aurora.webp",
+        title: "031_aurora",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20230601_144739.webp",
-        title: "20230601_144739",
+        image: "032_aurora.webp",
+        title: "032_aurora",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20230604_175300.webp",
-        title: "20230604_175300",
+        image: "033_bikes.webp",
+        title: "033_bikes",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20230703_163018.webp",
-        title: "20230703_163018",
+        image: "034_owl.webp",
+        title: "034_owl",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20230805_155119.webp",
-        title: "20230805_155119",
+        image: "035_waxwing.webp",
+        title: "035_waxwing",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20230904_213819.webp",
-        title: "20230904_213819",
+        image: "037_quail.webp",
+        title: "037_quail",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20230930_161424.webp",
-        title: "20230930_161424",
+        image: "038_killdeer.webp",
+        title: "038_killdeer",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20231203_150707.webp",
-        title: "20231203_150707",
+        image: "039_slug.webp",
+        title: "039_slug",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20240107_150205.webp",
-        title: "20240107_150205",
+        image: "040_bc_tree.webp",
+        title: "040_bc_tree",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20240116_181058.webp",
-        title: "20240116_181058",
+        image: "041_mine.webp",
+        title: "041_mine",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20240116_181104.webp",
-        title: "20240116_181104",
+        image: "042_mine.webp",
+        title: "042_mine",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20240203_141521.webp",
-        title: "20240203_141521",
+        image: "043_mine.webp",
+        title: "043_mine",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20240328_195319.webp",
-        title: "20240328_195319",
+        image: "044_desert.webp",
+        title: "044_desert",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20240518_134254.webp",
-        title: "20240518_134254",
+        image: "045_skeet.webp",
+        title: "045_skeet",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20240519_211207.webp",
-        title: "20240519_211207",
+        image: "046_canyon.webp",
+        title: "046_canyon",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20240529_103627.webp",
-        title: "20240529_103627",
+        image: "047_rockies.webp",
+        title: "047_rockies",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20240601_144523.webp",
-        title: "20240601_144523",
+        image: "048_bunting.webp",
+        title: "048_bunting",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20240608_132956.webp",
-        title: "20240608_132956",
+        image: "049_kingfisher.webp",
+        title: "049_kingfisher",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20240809_211455.webp",
-        title: "20240809_211455",
+        image: "050_eclips.webp",
+        title: "050_eclips",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20240928_133241.webp",
-        title: "20240928_133241",
+        image: "051_elcipse.webp",
+        title: "051_elcipse",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20241010_223608.webp",
-        title: "20241010_223608",
+        image: "052_niagara.webp",
+        title: "052_niagara",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20241010_223708.webp",
-        title: "20241010_223708",
+        image: "053_tree.webp",
+        title: "053_tree",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20241011_001609.webp",
-        title: "20241011_001609",
+        image: "054_mallstar.webp",
+        title: "054_mallstar",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20241011_001707.webp",
-        title: "20241011_001707",
+        image: "055_mushroom_red.webp",
+        title: "055_mushroom_red",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "20250804_163758.webp",
-        title: "20250804_163758",
+        image: "055b_mushroom_white.webp",
+        title: "055b_mushroom_white",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "2a.webp",
-        title: "2a",
+        image: "056_mushroom_yellow.webp",
+        title: "056_mushroom_yellow",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "2aa.webp",
-        title: "2aa",
+        image: "057_mushroom_red.webp",
+        title: "057_mushroom_red",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "6.webp",
-        title: "6",
+        image: "058_mushroom_pink.webp",
+        title: "058_mushroom_pink",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "7aa2.webp",
-        title: "7aa2",
+        image: "059_flower_parasite.webp",
+        title: "059_flower_parasite",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "7b.webp",
-        title: "7b",
+        image: "060_flower_parasite.webp",
+        title: "060_flower_parasite",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "DSCF4021.webp",
-        title: "DSCF4021",
+        image: "061_bruce.webp",
+        title: "061_bruce",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG-20220709-WA0005.webp",
-        title: "IMG-20220709-WA0005",
+        image: "062_bruce.webp",
+        title: "062_bruce",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG-20220712-WA0129.webp",
-        title: "IMG-20220712-WA0129",
+        image: "063_humber.webp",
+        title: "063_humber",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG-20220719-WA0029.webp",
-        title: "IMG-20220719-WA0029",
+        image: "064_bc_tower.webp",
+        title: "064_bc_tower",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG-20220719-WA0035.webp",
-        title: "IMG-20220719-WA0035",
+        image: "065_isopod.webp",
+        title: "065_isopod",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG-20220727-WA0126.webp",
-        title: "IMG-20220727-WA0126",
+        image: "066_bc_trail.webp",
+        title: "066_bc_trail",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG-20220729-WA0012.webp",
-        title: "IMG-20220729-WA0012",
+        image: "067_niagara_tunnel.webp",
+        title: "067_niagara_tunnel",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG-20251224-WA0000.webp",
-        title: "IMG-20251224-WA0000",
+        image: "068_humber_fall.webp",
+        title: "068_humber_fall",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_20211005_120719_129.webp",
-        title: "IMG_20211005_120719_129",
+        image: "069_bloor_street.webp",
+        title: "069_bloor_street",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_20211128_150417_418.webp",
-        title: "IMG_20211128_150417_418",
+        image: "070_lost_tbm.webp",
+        title: "070_lost_tbm",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_20231029_172359_546.webp",
-        title: "IMG_20231029_172359_546",
+        image: "071_top_hat.webp",
+        title: "071_top_hat",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_20240511_173837_172.webp",
-        title: "IMG_20240511_173837_172",
+        image: "072_skyline.webp",
+        title: "072_skyline",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_20240602_005013_236.webp",
-        title: "IMG_20240602_005013_236",
+        image: "073_snow_portrait.webp",
+        title: "073_snow_portrait",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_20240602_104127_929.webp",
-        title: "IMG_20240602_104127_929",
+        image: "074_harold_point.webp",
+        title: "074_harold_point",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_20240602_104602_994.webp",
-        title: "IMG_20240602_104602_994",
+        image: "075_cansec.webp",
+        title: "075_cansec",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_20240602_105201_299.webp",
-        title: "IMG_20240602_105201_299",
+        image: "076_cansec.webp",
+        title: "076_cansec",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_20240602_110039_226.webp",
-        title: "IMG_20240602_110039_226",
+        image: "077_greenhouse_tree.webp",
+        title: "077_greenhouse_tree",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_2260.webp",
-        title: "IMG_2260",
+        image: "078_snake_plant_flower.webp",
+        title: "078_snake_plant_flower",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_3390.webp",
-        title: "IMG_3390",
+        image: "079_yucca_long_point.webp",
+        title: "079_yucca_long_point",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_3508.webp",
-        title: "IMG_3508",
+        image: "080_killarney_panorama.webp",
+        title: "080_killarney_panorama",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_3827.webp",
-        title: "IMG_3827",
+        image: "081_parliament.webp",
+        title: "081_parliament",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_3910.webp",
-        title: "IMG_3910",
+        image: "082_plant_move.webp",
+        title: "082_plant_move",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_4342.webp",
-        title: "IMG_4342",
+        image: "083_colorful_moth.webp",
+        title: "083_colorful_moth",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_5632.webp",
-        title: "IMG_5632",
+        image: "084_boats.webp",
+        title: "084_boats",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_6379.webp",
-        title: "IMG_6379",
+        image: "085_cemetary.webp",
+        title: "085_cemetary",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_6390.webp",
-        title: "IMG_6390",
+        image: "086_boating_humber.webp",
+        title: "086_boating_humber",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_6611.webp",
-        title: "IMG_6611",
+        image: "087_trestle.webp",
+        title: "087_trestle",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_6672.webp",
-        title: "IMG_6672",
+        image: "088_copper_mine.webp",
+        title: "088_copper_mine",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "IMG_6712.webp",
-        title: "IMG_6712",
+        image: "089_hells_gate.webp",
+        title: "089_hells_gate",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "Photo0377.webp",
-        title: "Photo0377",
+        image: "090_smokey_christmas.webp",
+        title: "090_smokey_christmas",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "Photo0544.webp",
-        title: "Photo0544",
+        image: "091_ride_for_heart.webp",
+        title: "091_ride_for_heart",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "Photo0582.webp",
-        title: "Photo0582",
+        image: "092_berries.webp",
+        title: "092_berries",
         description: "",
 		sortOrder: -1,
 		featured: false
       }
 ,
       {
-        image: "VideoCapture_20240409-000305.webp",
-        title: "VideoCapture_20240409-000305",
-        description: "",
-		sortOrder: -1,
-		featured: false
-      }
-,
-      {
-        image: "VideoCapture_20240409-000316.webp",
-        title: "VideoCapture_20240409-000316",
+        image: "093_chickadees.webp",
+        title: "093_chickadees",
         description: "",
 		sortOrder: -1,
 		featured: false

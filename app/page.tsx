@@ -9,6 +9,7 @@ import Patents from "@/components/Patents";
 import Gallery from "@/components/Gallery/Gallery";
 import Homelab from "@/components/Homelab";
 import Contact from "@/components/Contact";
+import AboutSite from "@/components/AboutSite";
 
 export default function Home() {
  /* return (
@@ -34,7 +35,9 @@ export default function Home() {
       <Experience />
       <Projects />
       <Skills />
-      <Gallery />
+      <Gallery />     
+      <Patents />
+      <AboutSite />
       <Section>
         <p className="mt-6 text-md leading-relaxed">       
           <span style={{"display":"inline-block"}}><img src="/profile/images/yt.ico" style={{"height":"1em", "paddingTop":"4px"}}></img></span>

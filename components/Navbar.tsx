@@ -1,36 +1,96 @@
+"use client"
+
+import Link from "next/link";
+import MobileMenu from "./MobileMenu";
+
+const links = [
+    { name: "About Me", href: "/#about" },
+    { name: "Experience", href: "/#experience" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Gallery", href: "/#gallery" },
+    { name: "Skills", href: "/#skills" },
+    { name: "Site", href: "/site" },
+];
+
+const handleAnchorClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+) => {
+    if (href.startsWith("/#")) {
+        event.preventDefault();
+
+        const id = href.substring(2);
+        const element = document.getElementById(id);
+
+        element?.scrollIntoView({
+            behavior: "smooth",
+        });
+    }
+};
+
 export default function Navbar() {
-  return (
-    <nav className="sticky top-0 left-0 right-0 z-50 border-b bg-white/80 backdrop-blur dark:bg-zinc-900/80">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a
-          href="/profile"
-          className="font-semibold text-zinc-900 dark:text-zinc-100"
+    return (
+        <nav
+            className="
+                fixed
+                top-0
+                left-0
+                right-0
+                z-50
+                border-b
+                bg-white/80
+                backdrop-blur
+                dark:bg-gray-900/80
+            "
         >
-          Tim Bernasch
-        </a>
+            <div
+                className="
+                    mx-auto
+                    flex
+                    max-w-5xl
+                    items-center
+                    justify-between
+                    px-6
+                    py-4
+                "
+            >
 
-        <div className="px-6 py-2 flex flex-wrap gap-x-6 gap-y-3 text-sm">
-          <a href="#about" className="text-zinc-700 hover:underline dark:text-zinc-300">
-            About
-          </a>
+                <Link
+                    href="/#top"
+                    className="font-bold text-xl"
+                >
+                    Tim Bernasch
+                </Link>
 
-          <a href="#experience" className="text-zinc-700 hover:underline dark:text-zinc-300">
-            Experience
-          </a>
 
-          <a href="#projects" className="text-zinc-700 hover:underline dark:text-zinc-300">
-            Projects
-          </a>
+                {/* Desktop */}
+                <div
+                    className="
+                        hidden
+                        items-center
+                        gap-6
+                        md:flex
+                    "
+                >
+                    {links.map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            onClick={(e) => handleAnchorClick(e, link.href)}
+                            className="
+                                hover:underline
+                            "
+                        >
+                            {link.name}
+                        </Link>
+                    ))}
+                </div>
 
-          <a href="#contact" className="hidden text-zinc-700 hover:underline dark:text-zinc-300">
-            Contact
-          </a>
 
-          <a href="/profile/resume.html" className="text-zinc-700 hover:underline dark:text-zinc-300">
-            Resume
-          </a>
-        </div>
-      </div>
-    </nav>
-  );
+                {/* Mobile */}
+                <MobileMenu links={links} />
+
+            </div>
+        </nav>
+    );
 }
