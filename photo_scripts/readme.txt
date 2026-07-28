@@ -1,7 +1,61 @@
-these scripts can be used with git bash (or, just regular terminal on Linux) in conjunction with an installed copy of the "ImageMagick" software to take some folders of images, (ie, /photos /projects) and generate an output tree of web-quality .webp images, and also the thumbnails, and then also generate the .ts array of images that is currently embedded into the typescript. So you can drop the image folders here, and run both scripts, and then paste the images and the array back into the page, and it should update all the images in a big batch
+# IMAGE PROCESSING WORKFLOW
 
-notes:
+This folder contains the scripts used to prepare image assets for the website gallery.
 
-1) right now the page is expecting there to be two galleries at /photos and /projects. It would be easy to add other galleries, its almost fully parametric but it would require making some links and cards and a little glue on the main page to actually get there.
+The scripts use ImageMagick to process source image folders (for example, /photos and /projects) and generate:
 
-2) the array is generated without any titles or descriptions. if it is regenerated then those will be zeroed out. Could easily make another script to import the old descriptions to the new file to do a proper update but for now i haven't needed that
+* Web-optimized .webp images for the full-size gallery viewer
+* Smaller thumbnail versions for gallery grids
+* A TypeScript image metadata array used by the website
+
+The workflow is designed so that new images can be added in batches:
+
+1. Drop source image folders into this directory
+2. Run the processing scripts
+3. Copy the generated images into the website image folders
+4. Replace/update the generated TypeScript image array
+5. Rebuild the website
+
+The scripts can be run using Git Bash on Windows or directly from a Linux terminal, provided ImageMagick and FFmpeg are installed.
+
+# IMPORTANT: IMAGE FILES NOT INCLUDED
+
+The processed image files are intentionally not committed to this repository.
+
+The gallery contains a large number of high-resolution images, and committing them would unnecessarily inflate the repository size. The scripts and metadata generation workflow are included instead, allowing the image assets to be regenerated locally.
+
+If you want to reproduce the gallery contents, provide the source images and run the processing scripts.
+
+# CURRENT GALLERY STRUCTURE
+
+The website currently expects two galleries:
+
+```
+/photos
+/projects
+```
+
+The gallery system is mostly parameterized and can support additional galleries, but adding a new gallery currently requires some additional wiring:
+
+* Adding the gallery data
+* Creating links/cards on the main page
+* Adding any required navigation or presentation elements
+
+The underlying gallery components are designed to support expansion.
+
+# IMAGE METADATA
+
+The generated TypeScript image array currently includes:
+
+* Image filenames
+* Gallery paths
+* Titles
+* Descriptions
+* Sorting metadata
+* Featured image information
+
+The generation script currently creates the image entries without titles or descriptions. If the script is rerun, manually edited metadata will be overwritten.
+
+A future improvement would be a metadata migration script that imports existing titles, descriptions, and other fields from the previous generated file into the updated array. This would allow images to be regenerated without losing manual edits.
+
+For the current workflow, manual metadata updates have been sufficient.
