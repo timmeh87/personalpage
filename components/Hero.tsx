@@ -3,7 +3,7 @@ import Section from "./Section";
 
 export default function Hero() {
   return (
-    <Section id="top" className="min-h-screen flex items-center pt-3">
+    <Section id="top" className="min-h-screen flex items-center pt-18">
         <div className="grid items-center gap-12 md:grid-cols-2">
 
           <div>
@@ -46,9 +46,11 @@ export default function Hero() {
             <Image
               src="/profile/images/portrait.webp"
               alt="Tim Bernasch"
-              width={500}
-              height={500}
+              width={0}
+              height={0}
+              style={{"width":"500px"}}
               className="rounded-2xl"
+              loading="eager"
             />
           </div>
 

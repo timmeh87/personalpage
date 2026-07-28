@@ -2,31 +2,31 @@
 
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
+import { navigateToSection, links } from "./navigation";
 
-const links = [
-    { name: "About Me", href: "/#about" },
-    { name: "Experience", href: "/#experience" },
-    { name: "Projects", href: "/#projects" },
-    { name: "Gallery", href: "/#gallery" },
-    { name: "Skills", href: "/#skills" },
-    { name: "Site", href: "/site" },
-];
 
-const handleAnchorClick = (
-    event: React.MouseEvent<HTMLAnchorElement>,
-    href: string
-) => {
-    if (href.startsWith("/#")) {
-        event.preventDefault();
 
-        const id = href.substring(2);
-        const element = document.getElementById(id);
+function scrollToSection(id: string) {
+    const element = document.getElementById(id);
 
-        element?.scrollIntoView({
-            behavior: "smooth",
-        });
+    if (!element) {
+        return;
     }
-};
+
+    const navbar = document.querySelector("nav");
+    const navbarHeight = navbar?.getBoundingClientRect().height ?? 0;
+
+    const y =
+        element.getBoundingClientRect().top +
+        window.scrollY -
+        navbarHeight -
+        224; // extra padding
+
+    window.scrollTo({
+        top: y,
+        behavior: "smooth",
+    });
+}
 
 export default function Navbar() {
     return (
@@ -58,6 +58,7 @@ export default function Navbar() {
                 <Link
                     href="/#top"
                     className="font-bold text-xl"
+                    onClick={(e) => {e.preventDefault(); navigateToSection("/#top")}}
                 >
                     Tim Bernasch
                 </Link>
@@ -76,7 +77,7 @@ export default function Navbar() {
                         <Link
                             key={link.href}
                             href={link.href}
-                            onClick={(e) => handleAnchorClick(e, link.href)}
+                            onClick={(e) => {e.preventDefault(); navigateToSection(link.href)}}
                             className="
                                 hover:underline
                             "

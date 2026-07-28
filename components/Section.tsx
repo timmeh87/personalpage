@@ -12,7 +12,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`scroll-mt-24 py-10 ${className}`}
+      className={`scroll-mt-24 py-5 ${className}`}
     >
       <div className="mx-auto max-w-6xl px-6">
         {children}

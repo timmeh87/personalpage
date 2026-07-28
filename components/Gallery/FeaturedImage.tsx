@@ -61,14 +61,17 @@ export default function FeaturedImage({
                     justify-between
                     p-5
                     text-white
+                    bg-gradient-to-t
+                    from-black/80
+                    to-transparent
                 "
             >
                 <div>
-                    <h3 className="text-xl font-semibold">
+                    <h3 className="text-xl font-semibold hidden">
                         {image.title}
                     </h3>
 
-                    <p className="text-sm text-white/80">
+                    <p className="text-sm text-white bg-gray-900/50 text-center">
                         {image.description}
                     </p>
                 </div>
@@ -80,7 +83,8 @@ export default function FeaturedImage({
                         px-3
                         py-1
                         text-sm
-                        backdrop-blur
+                        backdrop-blur                  
+                        whitespace-nowrap
                     "
                 >
                     View Gallery →

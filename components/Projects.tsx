@@ -24,7 +24,7 @@ const projects = [
   {
     title: "Embedded Human Interface Devices",
     description:
-      "Custom embedded hardware and firmware platforms including USB HID devices, wireless communication systems, and custom PCB designs.",
+      "Custom embedded hardware and firmware platforms including USB HID devices, wireless communication systems, and custom PCB designs",
     tags: [
       "Schematic capture",
       "PCB Design",
@@ -40,7 +40,7 @@ const projects = [
   {
     title: "Force Feedback Steering Wheel",
     description:
-      "While working at Dexlabs we built a custom force feedback videogame controller combining electronics design, embedded firmware, and mechanical integration.",
+      "At Dexlabs, I worked on a custom force-feedback video game controller, integrating electronics design, embedded firmware, and mechanical engineering into a single product",
     tags: [
       "Schematic capture",
       "PCB Design",
@@ -56,7 +56,7 @@ const projects = [
   {
     title: "Personal Homelab Infrastructure",
     description:
-      "Self-hosted infrastructure for storage, networking, development, and experimentation using enterprise server hardware.",
+      "Self-hosted infrastructure for storage, networking, development, and experimentation using enterprise server hardware",
     tags: [
       "Linux",
       "Windows",

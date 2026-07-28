@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { navigateToSection } from "./navigation";
 
 interface NavLink {
     name: string;
@@ -64,7 +65,13 @@ export default function MobileMenu({
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                onClick={() => setOpen(false)}
+                                onClick={(e) => 
+                                    {
+                                        e.preventDefault();
+                                        navigateToSection(link.href);
+                                        setOpen(false);
+                                    }
+                                  }
                             >
                                 {link.name}
                             </Link>

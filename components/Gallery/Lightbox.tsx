@@ -171,7 +171,8 @@ export default function Lightbox({
                         text-white
                     "
                 >
-                    {image.title}
+                    <p className="hidden">{image.title} <br/></p>
+                    {image.description}
                     <br />
                     {selectedIndex + 1} / {collection.images.length}
                 </div>

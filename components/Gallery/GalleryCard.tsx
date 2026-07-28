@@ -53,7 +53,7 @@ export default function GalleryCard({
                     {collection.title}
                 </h3>
 
-                <p className="mt-3 text-gray-600">
+                <p className="mt-3 text-gray-600 ">
                     {collection.description}
                 </p>
 

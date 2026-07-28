@@ -37,7 +37,8 @@ export default function Home() {
       <Skills />
       <Gallery />     
       <Patents />
-      <AboutSite />
+      <AboutSite />  
+      <Contact />
       <Section>
         <p className="mt-6 text-md leading-relaxed">       
           <span style={{"display":"inline-block"}}><img src="/profile/images/yt.ico" style={{"height":"1em", "paddingTop":"4px"}}></img></span>

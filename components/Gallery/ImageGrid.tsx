@@ -18,7 +18,7 @@ export default function ImageGrid({
         <div
             className="
                 grid
-                grid-cols-2
+                grid-cols-3
                 gap-0
                 md:grid-cols-4
             "

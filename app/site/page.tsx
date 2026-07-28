@@ -7,7 +7,7 @@ export default function SitePage() {
     return (
         <>
             <Navbar />
-            <Section className="py-24">
+            <Section className="pt-24">
 
                 <h1 className="text-4xl font-bold mb-6">
                     About this site
@@ -19,6 +19,9 @@ export default function SitePage() {
 
                 <br></br>
                 <img src="/profile/images/youarehere.webp" className="w-96"></img>
+                 <p className="max-w-3xl">
+                    <i>Figure 1: Actual server that is serving this page </i>
+                </p>
 
             </Section>
 
@@ -109,7 +112,7 @@ export default function SitePage() {
                     </li>
 
                     <li>
-                        Served using nginx docker image with web root mapped to a NAS folder
+                        Served using nginx docker image on TrueNAS Scale with web root mapped to a NAS folder
                     </li>
 
                     <li>

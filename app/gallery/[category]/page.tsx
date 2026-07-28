@@ -4,6 +4,7 @@ import GalleryViewer from "@/components/Gallery/GalleryViewer";
 import {
     galleryCollections,
 } from "@/components/Gallery/GalleryImages";
+import Navbar from "@/components/Navbar";
 
 
 interface PageProps {
@@ -38,7 +39,9 @@ export default async function GalleryPage({
 
 
     return (
-        <Section>
+        <>
+        <Navbar/>
+        <Section className="pt-24">
 
             <h1 className="text-4xl font-bold">
                 {collection.title}
@@ -59,5 +62,6 @@ export default async function GalleryPage({
             </div>
 
         </Section>
+        </>
     );
 }
