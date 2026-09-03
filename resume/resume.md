@@ -25,12 +25,12 @@ Computer engineer with 15+ years building systems end-to-end - from embedded fir
 - Created a prototype of a full web frontend ("Software as a Service") for a desktop application using Node.js, React, Docker Swarm and AWS services
 - Built and maintained a custom build system and release tooling (CMake, shell scripting, Lua, GCC toolchain, MSVC toolchain) to compile, package, and deploy a large application. Developed automation and tooling scripts (Python, Lua, shell scripting) for build systems and internal developer productivity workflows
 - Developed an extensive SQL schema to store streaming data efficiently, created normalized tables with foreign key relationships, indexes, and performed optimization of queries on million-row tables
-- Implemented and maintained WebSocket communication layer between C++ application and web frontends (NodeJS, React, CesiumJS), for visualization of data inside the application 
+- Implemented and maintained WebSocket communication layer between C++ application and web frontends (Node.JS, React, CesiumJS), for visualization of data inside the application 
 - Developed embedded Python scripting interface in C++, enabling runtime automation
 - Developed geospatial visualization and mapping systems using OpenGL and CesiumJS, including rendering pipelines, coordinate transforms, and performance optimization for large datasets
-- Profiled and debugged a 30+ thread multithreaded application in Windows and Linux environments using Visual Studio debugger, VSCode, GDB, Valgrind
-- Modernized legacy C++ codebase to modern C++ standards (C++11/14/17 style), improving memory safety, performance optimization, and maintainability
-- Performed performance tuning including CPU/memory profiling, speed optimization
+- Profiled and debugged a 30+ thread multithreaded application in Windows and Linux environments using Visual Studio debugger, VS Code, GDB, Valgrind
+- Modernized legacy C++ codebase to modern C++ standards (C++11/14/17 style), improving memory safety, performance, and maintainability
+- Performed performance tuning including CPU/memory profiling and optimization
 - Contributed to technical documentation, system design notes, and internal developer onboarding materials for complex multi-component software architecture
 - Leveraged AI-assisted development tools (Claude) to accelerate debugging, refactoring, and code understanding across large legacy C++ systems
 
@@ -43,7 +43,7 @@ Computer engineer with 15+ years building systems end-to-end - from embedded fir
 - Implemented and debugged peripheral interfaces including UART, SPI, I2C, CAN, USB, PWM, ADC/DAC, timers, interrupts, and DMA
 - Performed PCB bring-up, hardware/software integration, validation, and system-level debugging using oscilloscopes, logic analyzers, SWD/J-Link, and GDB-based workflows
 - Designed and developed custom input devices including USB HID peripherals (e.g., computer mice) and force-feedback game controllers, including firmware, protocol implementation, and real-time actuator control; reverse engineered Bluetooth protocols (e.g., Nintendo Switch Joy-Con) for third-party compatibility
-- Managed component sourcing, BOM optimization, and supply chain workflows using vendors such as Digi-Key, JLCPCB, and PCBWay, including coordination with PCB fabrication and assembly partners
+- Managed component sourcing, BOM optimization, and supply chain workflows using vendors such as DigiKey, JLCPCB, and PCBWay, including coordination with PCB fabrication and assembly partners
 - Operated and maintained 3D printing systems for rapid prototyping and iterative hardware development
 - Created technical documentation including schematics, design notes, validation procedures, and manufacturing documentation
 
@@ -95,7 +95,7 @@ McMaster University, Ontario, Canada
 
 ### Software Skills
 
-- Developing desktop and embedded software (Windows, Linux, bare metal) in C and C++, building and debugging using MSVC, GCC, and VSCode toolchains
+- Developing desktop and embedded software (Windows, Linux, bare metal) in C and C++, building and debugging using MSVC, GCC, and VS Code toolchains
 
 - Developing and debugging web applications and backend software using JavaScript, Node.js, REST APIs, React, Next.js, TypeScript, jQuery
 
@@ -135,7 +135,7 @@ McMaster University, Ontario, Canada
 
 - Designing PCBs and coordinating with PCB fabrication and assembly vendors (e.g., PCBWay, JLCPCB) to fabricate and assemble parts, prototypes, and products
 
-- Applying design for manufacturing, design for assembly, design for 3D printing principles in hardware design
+- Applying principles of design for manufacturing, design for assembly, design for 3D printing
 
 - Performing prototype validation and functional testing using custom-designed hardware test fixtures
 
@@ -161,4 +161,4 @@ McMaster University, Ontario, Canada
 
 - Leveraging AI-assisted development workflows to accelerate software development
 
-- Writing patents for the USPTO, working with inventors, laywers, draftspeople, and patent reviewers to see a patent through from inception to acceptance
+- Preparing patents for the USPTO, working with inventors, lawyers, draftspeople, and patent examiners to see a patent through from inception to acceptance

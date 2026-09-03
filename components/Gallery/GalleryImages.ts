@@ -47,6 +47,30 @@ export const galleryCollections: GalleryCollection[] = [
 		featured: false
       }
 ,
+     {
+        image: "20260831_165013.webp",
+        title: "20260831_165013",
+        description: "An earlier revision of the mouse PCB, without optimizations for the enclosure",
+		sortOrder: -1,
+		featured: false
+      }
+,
+      {
+        image: "20260831_165046.webp",
+        title: "20260831_165046",
+        description: "An much earlier revision of the PCB from the light toy",
+		sortOrder: -1,
+		featured: false
+      }
+,
+      {
+        image: "20260831_165122.webp",
+        title: "20260831_165122",
+        description: "This is a personal project, I was into indoor plant growing/automation for a while when I lived in an apartment and wanted to keep all my plants alive. This is a flexible constant current LED driver. It was designed with a power limit of 1000W in mind, however I ended up moving to a house with a real garden so this got put on the back burner after only completing a 200W test",
+		sortOrder: -1,
+		featured: false
+      }
+,
       {
         image: "20250718_002926.webp",
         title: "USB PCB",
@@ -58,7 +82,7 @@ export const galleryCollections: GalleryCollection[] = [
       {
         image: "20250803_234518.webp",
         title: "Server",
-        description: "My Lenovo ThinkServer RD650 with 3D printed drive caddies. This is the machine that hosts this website",
+        description: "My Lenovo ThinkServer RD650 with 3D printed drive caddies. This is the machine that hosts this website. I even included fiber-optics for the LEDs like the original caddies.",
 		sortOrder: -1,
 		featured: false
       }
@@ -66,7 +90,7 @@ export const galleryCollections: GalleryCollection[] = [
       {
         image: "20250929_210644.webp",
         title: "Homelab",
-        description: "My Server rack. Made out of wood and metal L brackets - much cheaper than buying a real rack and rails for everything",
+        description: "My Server rack. Made out of wood, with metal L brackets - much cheaper than buying a real rack and rails for everything",
 		sortOrder: -1,
 		featured: false
       }
@@ -82,7 +106,7 @@ export const galleryCollections: GalleryCollection[] = [
       {
         image: "Photo0377.webp",
         title: "Tube Distortion",
-        description: "A vaccum tube distortion pedal I designed and built as a fun project. Featuring my salvaged Phillips CRT scope",
+        description: "A vaccum tube distortion pedal I designed and built as a fun project. Featuring my salvaged Phillips CRT scope. This project predates 3d printing so some of the plastic parts (white brackets) are made out of hand-formed polystyrene sheet",
 		sortOrder: -1,
 		featured: true
       }
@@ -506,7 +530,7 @@ export const galleryCollections: GalleryCollection[] = [
       {
         image: "050_eclips.webp",
         title: "050_eclips",
-        description: "2024 solar elcipse during totality. Jordan Harbor, Ontario",
+        description: "2024 solar eclipse during totality. Jordan Harbour, Ontario",
 		sortOrder: -1,
 		featured: false
       }
@@ -514,7 +538,7 @@ export const galleryCollections: GalleryCollection[] = [
       {
         image: "051_elcipse.webp",
         title: "051_elcipse",
-        description: "2024 solar elcipse, diamond ring effect. Jordan Harbor, Ontario",
+        description: "2024 solar eclipse, diamond ring effect. Jordan Harbour, Ontario",
 		sortOrder: -1,
 		featured: false
       }
@@ -730,7 +754,7 @@ export const galleryCollections: GalleryCollection[] = [
       {
         image: "077_greenhouse_tree.webp",
         title: "077_greenhouse_tree",
-        description: "Strange treen in a greenhouse. Centennial Park Greenhouse, Toronto.",
+        description: "Strange tree in a greenhouse. Centennial Park Greenhouse, Toronto.",
 		sortOrder: -1,
 		featured: false
       }

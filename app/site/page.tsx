@@ -142,7 +142,7 @@ export default function SitePage() {
                     Image Pipeline
                 </h2>
 
-                <p className="max-w-3xl">
+                <p className="max-w-3xl text-xl">
                     Gallery images are processed before deployment.
                     .jpg and .mp4 files are converted to .webp with ImageMagick and FFmpeg.
                     Full-resolution images and thumbnails generated seperately.
