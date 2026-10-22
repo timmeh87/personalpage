@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Section from "./Section";
-import { SiGithub, SiLinkedin } from "@icons-pack/react-simple-icons";
+import { SiGithub } from "@icons-pack/react-simple-icons";
 
 export default function Hero() {
   return (
