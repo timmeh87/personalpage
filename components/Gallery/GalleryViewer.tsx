@@ -17,12 +17,12 @@ export default function GalleryViewer({
     const [selectedIndex, setSelectedIndex] =
         useState<number | null>(null);
 
-    const sortedImages =
-        [...collection.images].sort(
-            (a, b) =>
-                a.sortOrder - b.sortOrder
-        );
-
+    const sortedImages = [...collection.images].sort((a, b) => {
+        if (a.sortOrder === -1) return 1;
+        if (b.sortOrder === -1) return -1;
+        return a.sortOrder - b.sortOrder;
+    });
+    
     return (
         <>
             <ImageGrid

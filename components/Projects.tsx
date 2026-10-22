@@ -78,6 +78,7 @@ export default function Projects() {
         Projects
       </h2>
 
+      <h3 className="text-xl mb-8">A selection of products I have worked on</h3>
       <div className="grid gap-8 md:grid-cols-2">
         {projects.map((project) => (
           <div

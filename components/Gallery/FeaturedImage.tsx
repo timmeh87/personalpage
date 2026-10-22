@@ -71,7 +71,7 @@ export default function FeaturedImage({
                         {image.title}
                     </h3>
 
-                    <p className="text-sm text-white bg-gray-900/50 text-center">
+                    <p className="text-sm truncate min-w-0 w-85 text-white bg-gray-900/50 text-center">
                         {image.description}
                     </p>
                 </div>

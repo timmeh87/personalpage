@@ -22,9 +22,11 @@ export default function Experience() {
   return (
     <Section id="experience">
       
-      <h2 className="text-3xl font-bold mb-8">
+      <h2 className="text-3xl font-bold mb-4">
         Experience
       </h2>
+      <h3 className="text-xl mb-8">Companies I have recently worked for</h3>
+
       <div className="grid gap-8 md:grid-cols-2">
           {jobs.map((job) => (
             <div className="rounded-xl border p-6" key={job.company}>

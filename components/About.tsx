@@ -2,8 +2,8 @@ import Section from "./Section";
 
 const techFocus = [
   "C/C++ Software Development",
-  "Javascript, Modern Web Applications",
   "PCB Design & Hardware Prototyping",
+  "Javascript, Typescript, Node.js, React - Modern Web Applications",
   "Embedded Systems & Firmware",
   "Cloud Infrastructure",
   "Build automation (Shell, CMake, Python)",
@@ -35,15 +35,16 @@ export default function About() {
 
         </div>
 
-        <div>
+        <div className="md:mt-12 md:ml-12">
           <h3 className="text-xl font-semibold">
             Technical Focus
           </h3>
 
-          <ul className="mt-6 space-y-3">
+          <ul className="mt-3 space-y-3">
             {techFocus.map(focus_item =>(
-              <li key={"tf_"+focus_item}>
-                  {focus_item}
+              <li key={"tf_" + focus_item} className="flex items-start gap-3">
+                <span className="mt-0.5 ml-4 dark:text-green-400 text-purple-700" aria-hidden="true">⏣</span>
+                <span>{focus_item}</span>
               </li>
             ))}
 
